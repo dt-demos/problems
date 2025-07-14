@@ -26,6 +26,17 @@ Running script
 
 Within Dynatrace there view the problem.
 
+## Get Problem
+
+Use this script to get the details for a problem.
+The script passing the optional querystring parameters to get more details about the problem.
+`$DT_BASEURL/api/v2/problems/$DT_PROBLEM_ID?evidenceDetails,impactAnalysis,recentComments`
+
+Running script and formatting output with `jq` utility.
+```
+./getproblem.sh -3923117663478183459_1752459060000V2 | jq '.'
+```
+
 ## Close Existing Problem 
 
 This script can be used to quickly close out an open problem. 
@@ -33,7 +44,7 @@ From the URL within Dynatrace you get obtain the Problem ID. For example: `-7079
 
 Running script:
 ```
-./closeevent.sh 5194648246915255341_1752457020268V2
+./closeproblem.sh 5194648246915255341_1752457020268V2
 ```
 
 Within Dynatrace there view the problem and review that it is closed.
