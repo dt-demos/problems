@@ -15,7 +15,9 @@ Example unix shell scripts related to problems.
 
 ## Send Event 
 
-Use this script to send an event to one or more entities
+Use this script to send an event to one or more entities.  
+For an overview of Dynatrace events types, review [Categories of Davis events
+](https://docs.dynatrace.com/docs/discover-dynatrace/platform/davis-ai/root-cause-analysis/concepts/events/event-types) help docs.
 
 Running script
 ```
